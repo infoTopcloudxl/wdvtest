@@ -57,28 +57,6 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-col col-xs-12 col-md-4 col-sm-6">
-                <div class="content wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.6s">
-                    <div class="title">
-                        {{widget('content', 'site-footer-blog-caption', {
-                            content:
-                            '<h4>Recent blog</h4>'
-                        })|raw}}
-                        
-                        {% if plugins.blog.posts|length %}
-                        <div class="case">
-                            {% for post in plugins.blog.posts|slice(0, 4) %}
-                            {% set postPermalink = "/" ~ plugins.blog.directory ~ "/" ~ post.slug|url_encode %}
-                            <p><a href="{{ postPermalink }}">{{ post.title|raw }}</a></p>
-                             {% endfor%}
-                        </div>
-                        {% else %}
-                            <p>There are no posts to display.</p>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
 </section>
