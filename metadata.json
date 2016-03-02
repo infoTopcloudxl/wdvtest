@@ -8,7 +8,16 @@
     ],
      "pageTypes": [
         "pages/home",
-        "pages/default"
+        "pages/default",
+        "pages/producten/hand-scanners",
+        "pages/producten/multizone",
+        "pages/producten/loss-prevention",
+        "pages/producten/singlezone",
+        "pages/producten/x-ray"
+        "pages/over-ons",
+        "pages/home/about",
+        "pages/home/contact",
+        "pages/home/feature"
     ],
     "colorSwatches":
     {
