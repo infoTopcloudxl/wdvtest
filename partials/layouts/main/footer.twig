@@ -6,9 +6,17 @@
 
             <div class="footer-col col-xs-12 col-md-4 col-sm-12">
                 <div class="footer-logo-area wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.2s">
-                    {{widget('logo', 'site-footer-logo', {
-                        defaultlogo: asset('/assets/src/images/logo.png'),
-                    })|raw}}
+                {{
+                    widget('image', 'headerimage', {
+                        'src': asset('/assets/images/logo.png'),
+                        'alt': 'The alternate text',
+                        'fileName': 'Logo Image',
+                        'fileSize': 3,
+                        'imageSize': '150 x 40',
+                        'imageWidth': '200',
+                        'float': 'right',
+                    })|raw
+                }}
                     {{widget('content', 'site-footer-description', {
                         content: '
                             <p>Lorem Ipsum is simply dummy text of the <br> 
