@@ -1,0 +1,105 @@
+
+<!--  Our footer-top section -->
+    <section class="footer-top">
+    <div class="container">
+        <div class="row">
+
+            <div class="footer-col col-xs-12 col-md-4 col-sm-12">
+                <div class="footer-logo-area wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.2s">
+                    {{widget('logo', 'site-footer-logo', {
+                        defaultlogo: asset('/assets/src/images/logo.png'),
+                    })|raw}}
+                    {{widget('content', 'site-footer-description', {
+                        content: '
+                            <p>Lorem Ipsum is simply dummy text of the <br> 
+                            printing and typesetting industry. Lorem Ipsum <br> 
+                            has been the industry standard dummy text</p>'
+                    })|raw}}
+                    <div class="footer-social">
+                    {{widget('content', 'site-footer-social-links', {
+                        content: '
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>'
+                    })|raw}}
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col col-xs-12 col-md-4 col-sm-6">
+                <div class="content wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.4s">
+                    <div class="title">
+                    {{widget('content', 'site-footer-contact-caption', {
+                        content:
+                        '<h4>contact</h4>'
+                    })|raw}}
+                        <article>
+                        {{widget('content', 'site-footer-contact', {
+                        content:
+                            '<a href="tel:1234567890">
+                                <i class="pe-7s-call"></i>
+                                (888) 123-456-7890
+                            </a>
+                            <a href="mailto:info@rextheme.com">
+                              <i class="fa fa-paper-plane-o"></i>
+                              name@yourdomain.com
+                            </a>
+                            <div class="address">
+                                <i class="pe-7s-map-marker"></i>
+                                <p>Example Street 546 <br>
+                                Creative Town, ZIP 12345 <br>
+                                Dhaka, Bangladesh</p>
+                            </div>'
+                        })|raw}}
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col col-xs-12 col-md-4 col-sm-6">
+                <div class="content wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.6s">
+                    <div class="title">
+                        {{widget('content', 'site-footer-blog-caption', {
+                            content:
+                            '<h4>Recent blog</h4>'
+                        })|raw}}
+                        
+                        {% if plugins.blog.posts|length %}
+                        <div class="case">
+                            {% for post in plugins.blog.posts|slice(0, 4) %}
+                            {% set postPermalink = "/" ~ plugins.blog.directory ~ "/" ~ post.slug|url_encode %}
+                            <p><a href="{{ postPermalink }}">{{ post.title|raw }}</a></p>
+                             {% endfor%}
+                        </div>
+                        {% else %}
+                            <p>There are no posts to display.</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- End footer-top section -->
+
+<!-- footer section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    {{widget('content', 'site-footer-copyright', {
+                        content:
+                        '<p>Made with love <span><i class="fa fa-heart"></i></span> Copyright &copy; 2015 - All Rights Reserved By Lawrex</p>'
+                    })|raw}}
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="socket">
+        <div class="backtop" style="display: block;">
+            <a href="#top"><i class="fa fa-angle-up"></i></a>
+        </div>
+    </section>
+<!--END FOOTER HTML-->

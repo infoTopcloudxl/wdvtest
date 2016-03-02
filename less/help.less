@@ -1,0 +1,236 @@
+/**
+** All Helper css
+**/
+.rex-heading{
+	position: relative;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 75px;
+	&:before{
+		 content: "";
+		 position: absolute;
+		 width: 15px;
+		 height: 1px;
+		 background-color: @rex-heading-color;
+		 bottom: 2px;
+		 text-align: center;
+	}
+	&:after{
+		 content: "";
+		 position: absolute;
+		 width: 15px;
+		 height: 1px;
+		 background-color: @rex-span-color;
+		 bottom: 0px;
+		 text-align: center;
+	}
+	h3{
+	}
+}
+
+.rex-sub-title{
+	position: relative;
+	text-align: left;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	&:before{
+		 content: "";
+		 position: absolute;
+		 width: 15px;
+		 height: 1px;
+		 background-color: @rex-heading-color;
+		 bottom: 2px;
+		 left: 0;
+	}
+	&:after{
+		 content: "";
+		 position: absolute;
+		 width: 15px;
+		 height: 1px;
+		 background-color: @rex-span-color;
+		 bottom: 0;
+		 left: 0;
+	}
+	h3{
+
+	}
+}
+
+.button,.button {
+	border: 1px solid @rex-span-color;
+	padding: 15px 48px 18px 24px;
+	margin-top: 40px;
+	font-weight: bold;
+	color: @rex-heading-color;
+	text-transform: uppercase;
+	position: relative;
+	transition: 0.5s;
+  z-index: 10;
+	&:before{
+		content: "\f105";
+	    font-family: FontAwesome;
+	    position: absolute;
+	    border: 1px solid @rex-heading-color;
+	    color: @rex-heading-color;
+	    border-radius: 100%;
+	    font-size: 8px;
+	    top: 18px;
+	    right: 23px;
+	    padding: 1px;
+	    width: 15px;
+	    height: 15px;
+	    transition: 0.5s;
+	}
+	&:after{
+		content:"";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		background:@rex-span-color ;
+	    z-index: -10;
+		transition: 0.5s;
+	}
+	&:hover{
+		border-color: @rex-span-color;
+		color:@rex-body ;
+		transition: 0.5s;
+		&:before{
+			color:@rex-body;
+			border-color: @rex-body;
+			transition: 0.5s;
+		}
+		&:after{
+			width: 100%; 
+		}
+	}
+	&:focus{
+	outline: 0;
+    box-shadow: none;
+	}
+}
+
+
+/* with out border button */
+
+.rex-read-more{
+	i{
+		font-size: 18px;
+		color: @rex-span-color;
+		position: relative;
+		top: 4px;
+		margin-left: 10px;
+		margin-right: 5px;
+		// display: none;
+	}
+	a{
+		padding: 0;
+		border: 0;
+		background: none;
+		font-size: 12px;
+		font-family: 'Montserrat', sans-serif; 
+		font-weight: 700;
+		text-transform: uppercase;
+		color: @rex-text-color;
+		transition: 0.5s;
+	}
+	.btn-default{
+		&:hover{
+			background: none;
+			color: @rex-span-color;
+			transition: 0.5s;
+		}
+	}
+}
+
+/* box shadow */
+
+
+.box-shadow{
+	box-shadow: 0px 10px 13px 0px #e0e0e0;
+}
+
+.box-shadow-team{
+	box-shadow: 0px 10px 13px 0px #bcbcbc;
+}
+
+/* full width border */
+
+.full-width-border{
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		top: 9px;
+		left: 9px;
+		right: 9px;
+		bottom: 9px;
+		border: 1px dashed @rex-boder-color;
+	}
+}
+
+a{
+	text-decoration: none !important;
+}
+
+a[href="https://www.facebook.com/"]{
+	transition: 0.2s;
+	&:hover{
+		color: #3b5998 !important;
+		i{
+			transition: 0.2s;
+			color: #3b5998 !important;
+		}
+	}
+}
+a[href="https://twitter.com/"]{
+	transition: 0.2s;
+	&:hover{
+		color: #55acee !important;
+		i{
+			transition: 0.2s;
+			color: #55acee !important;
+		}
+	}
+}
+a[href="https://www.linkedin.com/"]{
+	transition: 0.2s;
+	&:hover{
+		color: #0077b5 !important;
+		i{
+			transition: 0.2s;
+			color: #0077b5 !important;
+		}
+	}
+}
+
+a[href="https://plus.google.com/"]{
+	transition: 0.2s;
+	&:hover{
+		color: #dc4e41 !important;
+		i{
+			transition: 0.2s;
+			color: #dc4e41 !important;
+		}
+	}
+}
+
+a[href="https://www.instagram.com/"]{
+	transition: 0.2s;
+	&:hover{
+		color: #3f729b !important;
+		i{
+			transition: 0.2s;
+			color: #3f729b !important;
+		}
+	}
+}
+
+
+// nicescroll
+
+#ascrail2000{
+	z-index: 99999 !important;
+}
+

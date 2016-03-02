@@ -1,0 +1,76 @@
+<section id="team" data-scrolloffset="50" class="rex-team container">
+    <div class="rex-heading">
+        {{
+            widget('content', 'loss-prevention', {
+                content: '<h3>LOSS PREVENTION</h3> 
+                    <br>
+                    <p>
+                        CEIA produceert al jaren toonaangevende walk-through en draagbare metaaldetectiesystemen 
+                        voor verlies- en diefstalpreventie. Het detecteren van kleine hoogwaardige metalen 
+                        voorwerpen is voor de producten van CEIA geen uitdaging. CEIA heeft een systeem 
+                        ontwikkeld dat bedrijven maximaal beschermt tegen diefstal van edelmetalen, 
+                        elektronica en sieraden.
+                    </p>
+                    '
+            })|raw
+        }}
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-smxs-5 padding-right">
+            <div class="rex-top-lawyer wow fadeInUp margin-bottom-level-6"  
+            data-wow-duration="1s" 
+            data-wow-delay="0.8s"
+            >
+                {{
+                    widget('image', 'team-image1', {
+                        src: asset('/assets/images/smd601plus.jpg'),
+                        alt: '',
+                        fileSize: 3,
+                        imageWidth: '100%',
+                    })|raw
+                }}
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-5 padding-right">
+            <div class="rex-team-content wow fadeInUp"  data-wow-duration="1" data-wow-delay="0.8s">
+                <div class="rex-team-text">
+                    {{
+                        widget('content', 'team-content2', {
+                            content: '
+                                <h4>SMD601 Plus Profiling</h4>
+                                    <br />
+                                    De SMD601 Plus Profiling metaaldetectiepoort alarmeert bij de meest kleine 
+                                    metalen voorwerpen terwijl het niet-verwijderbare metalen kan negeren. 
+                                    Het detecteert items op elke plek van het lichaam. De poort voldoet aan de 
+                                    Amerikaanse NIJ0601.02 normen, die ook wel beschouwd worden als de strengste 
+                                    ter wereld. Het vraag een extreme gevoeligheid van de poort, ongeacht de 
+                                    doorloopsnelheid. De SMD601 Plus Profiling geeft met ledverlichting aan op 
+                                    welke hoogte het metalen object zich bevindt. 
+                                    <br /><br />
+                                <h4>Kenmerken SMD601 Plus Profiling</h4>
+                                <br />
+                                <ul>
+                                    <li>Vermindert diefstal door extreme detectiemogelijkheden</li>
+                                    <li>Toont nauwkeurig de locatie van metalen voorwerpen</li>
+                                    <li>Extreem hoge mate van immuniteit voor elektrische en mechanische storingen</li>
+                                    <li>Biedt privacy door niet-invasieve controle</li>
+                                    <li>Willekeurige selectiemogelijkheid </li>
+                                    <li>Stand-alone-oplossing (geen computer vereist)</li>
+                                    <li>Lokaal of op afstand te programmeren met netwerkmogelijkheden</li>   
+                                </ul>
+                            '
+                        })|raw
+                    }}
+                    <div class="col-md-4 col-sm-4 padding-right">
+                        <a href="{{ asset('/documents/producten/loss-prevention/SMD601PlusLossPreventionbrochureGB.pdf') }}"
+                        class="button"
+                        role="button"
+                        >
+                        Download brochure
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Contact section Style
+   ========================================================================== */
+
+.contactform__legend {
+	color: @rex-span-color;
+	padding-bottom: 15px;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0 0 20px 0;
+  margin: 0 0 20px 0;
+}
+
+.rex-contact{
+	padding-bottom: 100px;
+
+	/* contact left bar style */
+	.rex-address{
+		background: @rex-body;
+		padding: 18px;
+		@extend .full-width-border;
+	}
+
+	/* contact right bar style */
+	.form-section{
+		background: @rex-body;
+		overflow: hidden;
+		padding: 59px 40px 39px 55px;
+		@extend .full-width-border;
+		.col-md-12,.col-md-6{
+			padding: 0;
+		}
+
+		.label {
+			color: @rex-text-color;
+			padding: 10px 0;
+			display: block;
+			text-align: left;
+			margin: 0;
+		}
+	
+		input, textarea, .form-group{
+			border-radius: 0;
+			margin: 0;
+			box-shadow: none;
+		}
+		input, textarea{
+			transition: 0.5s;
+			&:focus{
+				border-color: @rex-span-color;
+				outline: none;
+			}
+
+		}
+		textarea{
+			height: 100px;
+			max-height: 118px;
+			padding-top: 20px;
+		}
+		.contactform__form-group{
+			overflow: hidden;
+			position: relative;
+			padding-bottom: 20px;
+			input{
+				height: 40px;
+			}
+		}
+		.button{
+			border-radius: 2px;
+			margin-top: 0;
+		
+		}
+	}
+}
+
+
+/** Google Map**/
+.rx-map{
+	.bk-map{
+	min-height: 438px;
+	filter: gray; 
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(1); 
+	-webkit-filter: grayscale(100%);
+	}
+}

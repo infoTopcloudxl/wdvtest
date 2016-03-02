@@ -1,0 +1,260 @@
+/*============================
+singel Blog Page css 
+=============================*/
+.blog-page{
+	background: #fff;
+	.container{
+		padding: 100px 0;
+	}
+}
+.blog-img{
+	border: 2px solid @rex-boder-color;
+	img{
+		width: 100%;
+	}
+}
+.rex-blog-boader{
+	border: 1px solid @rex-boder-color;
+	padding: 45px;
+}
+
+.blog-text-contain{
+	margin-top: 15px;
+	margin-bottom: 35px;
+	.rex-heading{
+		margin-bottom: 15px;
+		padding-bottom: 8px;
+		h4{
+			font-size: 16px;
+		}
+	}
+	.post-meta{
+		padding-bottom: 30px;
+		text-align: center;
+		a{
+			margin-right: 10px;
+			color: @rex-text-color;
+			font-size: 13px;
+		}
+		i{
+			margin-left: 0;
+			color:@rex-span-color;
+			font-size: 13px;
+			padding: 0 7px;
+		}
+	}
+	p{
+		margin-bottom: 35px;
+		&:nth-of-type(3){
+			border-left: 5px solid #ebeef4;
+			font-size: 12px;
+			font-weight: bold;
+			padding-left: 15px;
+		}
+	}
+}
+
+
+.rex-blog-tag-box{
+	margin-bottom: 35px;
+	overflow: hidden;
+	.rex-tag-left{
+		position: relative;
+		margin-bottom: 15px;
+		ul{
+			margin:0;
+			padding: 0;
+			&:before {
+				content: "\e60c";
+			    font-family: 'Pe-icon-7-stroke';
+			    font-size: 18px;
+			    left: -10px;
+			    bottom: -3px;
+			    position: absolute
+			}
+			li{
+				display: inline-block;
+				a{
+					color: @rex-text-color;
+					font-weight: bold;
+					&:hover{
+						color: @rex-hover-color;
+					}
+				}
+			}
+		}
+	}
+	.rex-tag-right{
+		p.rex-comment-day {
+		    margin-top: 0px;
+		    float: left;
+		    font-weight: bold;
+		}
+		a{
+			margin-right: 9px;
+			color: #666666;
+			font-size: 18px;
+			&:last-child{
+				margin-right: 0;
+			}
+			&:hover{
+				color: @rex-heading-color;
+				transition: 0.5s;
+			}
+		}
+	}
+}
+
+.rex-blog-seftion{
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			list-style: none;
+			ul{
+				li{
+					margin-left: 100px;
+					margin-top: -10px;
+					ul{
+						li{
+							margin-left: 100px;
+							margin-bottom: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.rex-blog-comment{
+	margin-bottom: 14px;
+    overflow: hidden;
+	.rex-comment-author-img{
+		float: left;
+		text-align: center;
+		width:27% ;
+		min-height: 185px;
+	}
+	.rex-comment-details{
+		border: 1px solid @rex-boder-color;
+		padding: 33px;
+        float: left;
+	    width: 72%;
+	    margin-left: 3px;
+	    min-height: 185px;
+        .rex-comment-author{
+        	width: 50%;
+        	float: left;
+          a{
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: @rex-text-color;
+          }
+        }
+        .right{
+          display: inline-block;
+          float: right;
+          text-transform: uppercase;
+          .rex-comment-day{
+            display: inline;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            a{
+              color: @rex-text-color;
+            }
+          }
+          .rex-comment-reply{
+            display: inline-block;
+            margin-left: 12px;
+            a{
+              font-size: 12px;
+              font-family: 'Roboto', sans-serif;
+              font-weight: bolder;
+              color: #337ab7;
+              color: @rex-text-color;
+            }
+          }
+        }
+        .rex-comment-text{
+          padding-top: 12px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          margin-bottom: 45px;
+        }
+      }
+
+}
+
+
+
+.rex-comment-from{
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	.rex-heading{
+		margin-bottom: 45px;
+	}
+	.form-group{
+		input, textarea, .form-group{
+			border-radius: 0;
+			margin: 0;
+			border-color: @rex-boder-color;
+			box-shadow: none;
+		}
+		input, textarea{
+			padding-left: 40px;
+			transition: 0.5s;
+			&:focus{
+				border-color: @rex-span-color;
+			}
+		}
+		textarea{
+			max-height: 118px;
+			padding-top: 20px;
+		}
+		.rx-form-group{
+			padding-bottom: 15px;
+			overflow: hidden;
+			position: relative;
+			input{
+				height: 40px;
+			}
+		}
+		.btn-default{
+			margin-top: 28px;
+			padding: 8px 62px 8px 35px;
+			border-radius: 2px;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+			font-size: 14px;
+			text-transform: uppercase;
+			transition: 0.5s;
+			position: relative;
+			border-color: @rex-boder-color;
+			&:hover{
+				background: none;
+				border-color: @rex-span-color;
+				color: @rex-span-color;
+			}
+			&:after{
+				content: "\f105";
+			    font-family: FontAwesome;
+			    position: absolute;
+			    border: 1px solid #f86759;
+			    color: @rex-span-color;
+			    border-radius: 100%;
+			    font-size: 8px;
+				top: 11px;
+				right: 37px;
+			    padding: 1px;
+			    width: 15px;
+			    height: 15px;
+			}
+		}
+	}
+}

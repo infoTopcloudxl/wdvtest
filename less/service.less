@@ -1,0 +1,111 @@
+/*===========================================================
+					Service css
+=============================================================*/
+
+
+
+.rex-service{
+	background: #fff;
+	border-top: 1px solid @rex-section-color;
+	border-bottom: 1px solid @rex-section-color;
+	.row{
+	    position: relative;
+	    height: 100%;
+	}
+	.col-md-12, .col-md-6{
+		padding: 0;
+	}
+
+	.select-col-img  {
+
+	    position: absolute;
+	    height: 100%;
+      overflow: hidden;
+      .widget {
+      	position: static;
+      	@media only screen and (max-width: 1200px) {
+					position: relative;
+      	}
+      }
+
+      @media only screen and (max-width: 1200px) {
+				position: initial;
+      }
+	}
+
+	.imagewidget__image {
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    width: 100%;
+	    max-width: 100%;
+
+	    @media only screen and (max-width: 1200px) {
+				position: initial;
+				top: 0;
+				transform: translateY(0%);
+				width: auto;
+				margin: 0 auto;
+				display: block;
+				
+				
+      }
+	}
+
+	.select-col{
+		@media only screen and (min-width: 1200px) {
+				float: right;
+      }
+	}
+
+
+	.rex-sub-title{
+		h3{
+			font-weight: 700;
+		}	
+	}
+		
+
+	/* service right site style */
+	.rex-service-content{
+		padding-left: 114px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+
+		@media only screen and (max-width: 770px) {
+			padding-left: 22px;	
+    }
+
+
+		h5{
+			color: @rex-span-color;
+			padding-bottom: 37px;
+		}
+		.article{
+			i{
+				float: left;
+				margin-right: 39px;
+				font-size: 30px;
+				color: @rex-text-color;
+				position: relative;
+				top: -5px;
+			}
+			.article-content{
+				overflow: hidden;
+				padding-bottom: 53px;
+				margin-top: 5px;
+				h4{
+					padding-bottom: 10px;
+				}
+				p{
+					color: @rex-text-color;
+				}
+			}
+			&:last-child{
+				.article-content{
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}

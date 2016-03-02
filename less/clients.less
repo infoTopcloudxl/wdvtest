@@ -1,0 +1,105 @@
+/*=============================
+clients style
+===============================*/
+
+.rex-clients{
+	padding-top:100px ;
+	position: relative;
+	// overflow: hidden;
+
+	// .owl-buttons{
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 100%;	
+	// }
+
+	&:hover{
+		.owl-theme .owl-controls .owl-buttons div.owl-prev{
+			margin-left: -31px;
+			opacity: 1;
+		}
+		.owl-theme .owl-controls .owl-buttons div.owl-next{
+			margin-right: -31px;
+			opacity: 1;
+		}
+	}
+}
+#rex-Client{
+	background:@rex-body ;
+	border: 2px solid @rex-boder-color;
+
+}
+
+.owl-carousel .owl-wrapper-outer{
+	z-index: 10;
+}
+
+.owl-carousel{
+	.rex-client-logo{
+		text-align: center;
+		padding: 40px;
+		min-height: 155px;
+		transition: 0.5s;
+		border: 1px solid transparent;
+		&:hover{
+			border: 1px solid rgba(210, 210, 210, 0.36);
+			transition: 0.5s;
+			img{
+			    transform: scale(1.2);
+			}
+
+		}
+		img{
+			opacity: 0.6;
+			transition: 0.5s;
+			&:hover{
+				opacity:1;
+				transition: 0.5s;
+			}
+		}
+	}
+}
+
+.owl-theme .owl-controls .owl-buttons div{
+  background: transparent;
+  border: 2px solid #c5c5c5;
+  // border: 2px solid red;
+  border-radius: 0;
+  color: #c5c5c5;
+  font-size: 24px;
+  line-height: 1;
+  padding: 4px 9px;
+  transition: all 0.5s ease-in;
+  top: 50%;
+  // transform: translatey(-50%);
+  &:hover{
+  	background: #fff;
+	box-shadow: 0px 0px 0px 1px #c5c5c5;
+	color: #c5c5c5;
+  }
+}
+
+.owl-theme .owl-controls{
+	margin: 0;
+}
+
+.owl-buttons{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-prev{
+	opacity: 0;
+	float: left;
+	margin-left: -5%;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-next{
+	opacity: 0;
+	float: right;
+	margin-right: -5%;
+}

@@ -1,0 +1,71 @@
+/*===========================================================
+					Slider css
+=============================================================*/
+
+.rex-slider{
+	position: relative;
+
+	.imagewidget__image {
+		display: block;
+    max-width: 100%;
+    height: auto;
+	}
+
+	.rex-caption{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		h3{
+			margin-bottom: 15px;
+		}
+		h1{
+			font-weight: bolder;
+		}
+	}
+
+	// video slider 
+
+	.video-bg{
+		/* slider video img style */
+		width: 100%;
+		background-repeat: no-repeat;
+		height: 700px;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	.video{
+		h3, h1, a{
+			color: #fff;
+		}
+		.rex-caption{
+			text-align: center;
+		    transform: translate(-50%, -50%);
+		    left: 50%;
+		}
+		.button{
+			&:before{
+				color: #fff;
+				border-color: #fff;
+			}
+		}
+	}
+
+}
+
+
+body.edit {
+	.rex-caption {
+		z-index: 9999;
+	}
+}
+
+

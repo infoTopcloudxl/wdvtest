@@ -1,0 +1,250 @@
+/*=============
+ Aside style
+===============*/
+
+.rex-widget{
+	border: 1px solid @rex-boder-color;
+	padding: 30px 10px 30px 25px;
+	margin-bottom: 30px;
+	.title{
+		h4{
+			margin-bottom: 25px;
+		}
+	}
+}
+
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+        .search-query {
+	        padding-right: 3px;
+	        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+	        margin-bottom: 0;
+	        border-radius: 0;
+	    }
+	    button {
+	        border: 0;
+	        background: none;
+	        /** belows styles are working good */
+	        padding: 2px 5px;
+	        margin-top: 2px;
+	        position: relative;
+	        left: -28px;
+	        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+	        margin-bottom: 0;
+	        border-radius: 3px;
+	        color:#D9230F;
+	        span{
+	        	color: @rex-text-color;
+	        }
+	    }
+}
+.search-query:focus + button {
+    z-index: 3;   
+}
+.form-control:focus {
+    border-color: @rex-hover-color;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.widget_recent_entries{
+	.content{
+		h4{
+			margin-bottom: 25px;
+		}
+		.case{
+			p{
+				padding-bottom: 10px;
+				position: relative;
+				margin-bottom: 10px;
+				color: @rex-text-color;
+				a{ 
+					color:@rex-text-color ;
+					transition: 0.5s;
+					&:hover{
+						color:@rex-hover-color;
+						transition: 0.5s;
+					}
+				}
+				&:last-child{
+					&:before{
+						display: none;
+					}
+				}
+				&:before{
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 15px;
+					height: 1px;
+					background: @rex-text-color;
+				}
+			}
+		}
+	}
+	.rex-twitter-text-box{
+		p{
+			line-height: 28px;
+		}
+	}
+}
+
+
+.widget_calendar{
+	.legend {
+	    display: none;
+	}
+	.zabuto_calendar{
+		.table{
+			tbody{
+				tr{
+					th{
+						border-top: 0px solid #ddd;
+					}
+					td{border-top: 0px solid #ddd;}
+				}
+			}
+		}
+	}
+}
+.widget_recent_entries{
+	.rx-blockquote-box{
+		margin-bottom: 20px;
+		h6{
+			a{
+				color: @rex-heading-color;
+				transition: 0.5s;
+				&:hover{
+					color: @rex-hover-color;
+					transition: 0.5s;
+				}
+			}
+			margin-top: 10px;
+		}
+		p{
+			margin-top: 10px;
+			color: @rex-text-color;
+			a{
+				color: @rex-span-color;
+			}
+		}
+	}
+}
+
+
+.widget_categories{
+	.rex-archive{
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style: none;
+				margin-bottom: 10px;
+				position: relative;
+				a{
+					margin-left: 30px;
+					color: @rex-text-color;
+					transition: 0.5s;
+					&:hover{
+						color: @rex-hover-color;
+						transition: 0.5s;
+					}
+				}
+				&:after{
+					content: "\f067";
+				    font-family: FontAwesome;
+				    color: #fff;
+				    position: absolute;
+				    bottom: 0;
+				    text-align: center;
+				    left: 6px;
+				    font-size: 11px;
+				    top: 3px;
+				}
+				&:before{
+					 content: "";
+					 position: absolute;
+					 width: 20px;
+					 height: 20px;
+					 border-radius: 100%;
+					 background-color: @rex-span-color;
+					 bottom: 0px;
+					 left: 0;
+					 text-align: center;
+				}
+			}
+		}
+	}
+}
+
+.widget_archive{
+	.rex-archive{
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style: none;
+				margin-bottom: 10px;
+				position: relative;
+				a{
+					margin-left: 30px;
+					color: @rex-text-color;
+				}
+				&:after{
+					content: "\f067";
+				    font-family: FontAwesome;
+				    color: #fff;
+				    position: absolute;
+				    bottom: 0;
+				    text-align: center;
+				    left: 6px;
+				    font-size: 11px;
+				    top: 3px;
+				}
+				&:before{
+					 content: "";
+					 position: absolute;
+					 width: 20px;
+					 height: 20px;
+					 border-radius: 100%;
+					 background-color: @rex-span-color;
+					 bottom: 0px;
+					 left: 0;
+					 text-align: center;
+				}
+			}
+		}
+	}
+}
+
+
+.widget_meta{
+	.rex-tag{
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style: none;
+			    display: inline-block;
+			    padding: 12px 16px;
+			    text-align: center;
+				a{
+					color: @rex-text-color;
+					text-transform: uppercase;
+					font-size: 11px;
+				}
+				&:hover{
+					color:#fff;
+					background: @rex-span-color;
+					a{color:#fff;}
+
+				}
+			}
+		}
+	}
+
+}

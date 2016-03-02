@@ -1,0 +1,73 @@
+/*==============================================
+	Testimonial style
+===============================================*/
+.rex-testimonial{
+    background-size: cover;
+    min-height: 500px;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+    .rex-heading{
+    	margin-bottom: 60px;
+    	h3{
+    		color: #fff;
+    	}
+    }
+}
+
+#rex-testimonial{
+	.rex-content-img{
+		width: 100px;
+	    height: 100px;
+	    margin: 5px auto 20px;
+		img{
+			box-shadow: 0px 0px 0px 5px rgba(233,233,233,0.25);
+			border-radius: 100%;
+		}
+	}
+	h4{
+		margin-bottom: 20px;
+	}
+}
+
+/*pagination css*/
+.owl-theme{
+	.owl-controls {
+		margin-top: 25px;
+		.owl-page{
+			z-index: 999;
+			span {
+			    background: @rex-body;
+			    width: 8px;
+    			height: 8px;
+    			margin: 5px 4px;
+			    opacity: 1;
+			}
+			&.active span {
+			    border: 3px solid @rex-span-color;
+			    border-radius: 100%;
+			    z-index: 9;
+			}
+		}
+	} 
+}
+.owl-pagination{
+	position: relative;
+	&:before{
+	    content: "";
+	    position: absolute;
+	    width: 80px;
+	    height: 2px;
+	    background: #fff;
+	    top: 8px;
+	    margin: 0 auto;
+	    z-index: -1;
+	}
+}	 
+
+.stick {
+	position:fixed;
+	top:0px;
+	width:100%;
+	z-index: 9999;
+}

@@ -1,0 +1,36 @@
+ <!--  Our contact Us section -->
+            <section id="contact" data-scrolloffset="150" class="rex-contact container">
+            <div class="rex-heading">
+                
+            {{widget('content', 'contact-title', {
+                content: '<h2>contact Us</h2>'
+            })|raw}}
+
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="rex-address">
+                        <div class="rx-map">
+                          {{widget('map', 'googlemaps', {
+                          'height': '436',
+                          'zoom': '15',
+                          'address': 'profile'
+                        })|raw}}
+                       </div><!--/rx-map-->
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <div class="form-section">
+                        <!-- Form area -->
+
+                        {{widget('contactform', 'contact', {
+                          'text': 'Submit',
+                          'formTitle': 'Contact Us',
+                          'email': 'profile'
+                        })|raw}}
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->

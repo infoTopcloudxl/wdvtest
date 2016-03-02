@@ -1,0 +1,58 @@
+/*==================================
+  			Achievment style
+  =================================*/
+
+.rex-achievment{
+  	margin-top: 55px;
+  	margin-bottom: 125px;
+  	.rex-achievment-list{
+  		ul{
+  			margin: 0;
+  			padding: 0;
+  			li{
+  				list-style: none;
+			    float: left;
+			    background-color: @rex-body;
+			    text-align: center;
+			    width: 25%;
+			    border-left: 1px solid @rex-boder-color;
+			    border-top: 1px solid @rex-boder-color;
+			    border-bottom: 1px solid @rex-boder-color;
+			    padding: 40px 0 45px 0;
+			    transition: 0.5s;
+			    &:nth-child(2n){
+			    	background-color: #f8f8f8;
+			    }
+			    &:last-child{
+			    	border-right: 1px solid @rex-boder-color;
+			    }
+			    .rex-achie-icon{
+			    	font-size: 36px;
+			    	margin-bottom: 15px;
+			    }
+			    h2.count-title{
+			    		font-size: 36px;
+			    		font-weight: bolder;
+			    		margin-bottom: 15px;;
+			    	}
+			    p{
+			    	span{
+			    		font-family: 'Montserrat', sans-serif; 
+			    		font-weight: bold;
+			    	}
+			    }
+			    &:hover{
+		    	    background: @rex-span-color;
+		    	    i{
+		    	    	color: #fff;
+		    	    }
+		    	    p{
+		    	    	span{
+		    	    		color: #fff;
+		    	    	}
+		    	    }
+			    }
+  			}
+  		}
+  	}
+}

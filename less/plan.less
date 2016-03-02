@@ -1,0 +1,133 @@
+/* ==========================================================================
+   plan Section Style
+   ========================================================================== */
+
+
+.plan{
+	padding-bottom: 100px;
+	.col{
+		padding: 0;
+			z-index: 1;
+		    transition: 0.5s;
+		    background: #F3F4F8;
+	}
+	// .active{
+	// 	transform: translateY(-11px);
+	// 	.rex-effect{
+	// 		z-index: 10;
+	// 		&:before,&:after{
+	// 			opacity: 1;
+	// 			z-index: 1;
+	// 		}
+	// 	}
+ //    	.rex-table-content{
+ //    		i, .rex-pricing-price{
+ //    			color:  @rex-span-color;
+ //    		}
+ //    	}
+	// }
+
+	.rex-effect{
+		position: relative;
+		&:hover{
+			transform: translateY(-11px);
+			&:before,&:after{
+				opacity: 1;
+			}
+		}
+		&:before,&:after{
+			z-index: -10;
+			opacity: 0;
+			position: absolute;
+			content: "";
+			bottom: 15px;
+			left: 10px;
+			width: 50%;
+			transition: 0.5s;
+			top: 80%;
+			max-width:300px;
+			background: #777;
+			box-shadow: 0 15px 10px #777;
+			transform: rotate(-3deg);
+		}
+		&:after{
+			transform: rotate(3deg);
+			right: 10px;
+			left: auto;
+		}
+	}
+
+	.active{
+		transform: translateY(-11px);
+		&:before,&:after{
+			opacity: 1;
+		}
+	}
+
+	.rex-table-content{
+		padding: 2em 4em;
+		border: 1px solid #ddd;
+		background: #F3F4F8;
+		// max-width: 320px;
+		margin: 0 auto;
+		text-align: center;
+
+		i{
+		    font-size: 3em;
+		    margin: 0.5em 0;
+		    color: @rex-span-color;
+		    transition: 0.5s;
+		}
+		.rex-table-title{
+			font-size: 1.5em;
+			margin: 0 0 0.5em 0;
+			padding: 0 0 0.5em;
+			font-family: 'Montserrat', sans-serif;
+			color: @rex-heading-color;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.rex-pricing-price{
+		    font-size: 2em;
+		    transition: 0.5s;
+		    margin: 0 0 0.5em 0;
+		    font-weight: bold;
+		    color: @rex-span-color;
+		    .pricing__currency{
+				font-size: 0.5em;
+				vertical-align: super;
+				color: @rex-heading-color;
+		    }
+		    .pricing__period{
+				font-size: 0.35em;
+				padding: 0 0 0 0.5em;
+				color: @rex-heading-color;
+		    }
+		}
+	    .rex-pricing-feature-list{
+		    margin: 0;
+		    padding: 0.25em 0 0.8em;
+		    list-style: none;
+		    text-align: center;
+		    color: #81867D;
+		    .rex-pricing-feature{
+	    	    padding: 1em 0.25em;
+	    	    color: #81867D;
+	    	    border: 1px solid #eee;
+		    }
+	    }
+	    .rex-pricing-action{
+			font-weight: bold;
+			margin-top: auto;
+			padding: 1em 2em;
+			border-radius: 2px;
+			background: #85c34a;
+			transition: background-color 0.3s, color 0.3s;
+	    }
+	}
+	button{
+		background: none;
+	}
+
+}
+

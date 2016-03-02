@@ -1,0 +1,183 @@
+.footer-col {
+	padding: 0 0 20px 0;
+	@media only screen and (max-width: 770px) {
+		text-align: center;
+	}
+}
+
+	/* footer top style  */
+.footer-top{
+    background: rgba(99, 99, 99, 0.19);
+    padding: 70px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+	.footer-logo-area{
+		text-align: center;
+		padding-top: 12px;
+		p{
+			font-size: 12px;
+			line-height: 24px;
+			color: @rex-text-color;
+			padding: 28px 0;
+		}
+		a{
+			margin-right: 16px;
+			color: @rex-heading-color;
+			i{
+				font-size: 24px;
+				transition: 0.5s;
+				color: @rex-hover-color;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+			&:hover{
+				i{
+					color: @rex-span-color;
+				}
+			}
+		}
+		
+	}
+	.content{
+
+		/* CONTACT Style */
+		h4{
+			font-size: 14px;
+			padding-bottom: 25px;
+		}
+		article{
+			a{
+				display: block;
+				margin-bottom: 20px;
+				color: @rex-text-color;
+				transition: 0.5s;
+				&:hover{
+					color: @rex-hover-color;
+					i{
+						color: @rex-hover-color;
+					}
+				}
+			}
+			i{
+				font-size: 18px;
+				margin-right: 18px;
+				transition: 0.5s;
+				color: @rex-text-color;
+			}
+		}
+		.address{
+			i{
+				
+			}
+			p{
+				overflow: hidden;
+				color: @rex-text-color;
+				line-height: 24px;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+
+		/* RECENT CASES Style*/
+
+		.case{
+			p{
+				padding-bottom: 10px;
+				position: relative;
+				margin-bottom: 10px;
+				color: @rex-text-color;
+				a{ 
+					color:@rex-text-color ;
+					transition: 0.5s;
+					&:hover{
+						color:@rex-hover-color;
+						transition: 0.5s;
+					}
+				}
+				&:last-child{
+					&:before{
+						display: none;
+					}
+				}
+				&:before{
+					content: "";
+					position: absolute;
+					bottom: 0;
+					width: 15px;
+					height: 1px;
+					background: @rex-text-color;
+					left: 50%;
+    			transform: translateX(-50%);
+    			@media only screen and (min-width: 770px) {
+    				left: 0;
+	    			transform: translateX(0);
+
+    			}
+				}
+			}
+		}
+
+		/* twitter Fide Style*/
+
+		.twitter-content{
+			a{
+				color: @rex-hover-color;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				font-size: 12px;
+				&:last-child{
+					font-size:14px;
+				}
+			}
+			p{
+				padding: 10px 0;
+				line-height: 24px;
+				color: @rex-text-color;
+			}
+		}
+
+
+	}
+}
+
+#footer{
+	text-align: center;
+	padding: 25px;
+	background: #fff;
+	p{
+		font-family: 'Montserrat', sans-serif; 
+		font-size: 12px;
+		font-weight: 700;
+		color: @rex-text-color;
+	}
+}
+
+
+
+.backtop {
+  /* Backtop css */
+  bottom: 0;
+  display: none;
+  margin-bottom: 35px;
+  margin-right: 50px;
+  position: fixed;
+  right: 0;
+  z-index: 99999;
+  border-radius: 0;
+  border: 1px solid @rex-span-color;
+	a {
+	  display: block;
+	  float: right;
+	  height: 32px;
+	  width: 32px;
+	  .fa {
+		  font-size: 30px;
+		  line-height: 16px;
+		  margin-left: 6px;
+		  margin-top: 6px;
+		  color: @rex-span-color;
+		}
+	}
+}
+

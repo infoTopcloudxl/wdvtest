@@ -1,0 +1,122 @@
+<!-- Header start -->
+<header id="header">
+  <div class="container">
+      <!-- Header Top Area -->
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Phone & email addres -->
+        <div class="rex-addres-section">
+          <a href="tel:1234567890">
+            <i class="fa fa-phone"></i>
+            {{ profile.phone }}
+          </a>
+          <a href="mailto:info@rextheme.com">
+            <i class="fa fa-paper-plane-o"></i>
+            {{ profile.email }}
+          </a>
+        </div>
+        <!-- end Phone & email addres -->
+
+        <!-- media-link start -->
+        <div class="rex-media-link">
+        {{widget('content', 'site-header-social-links', {
+          content: '
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          '
+        })|raw}}
+        </div>
+        <!-- End media link -->
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End header top section -->
+
+  <!-- nav start -->
+  <nav id="rex-sticke-nav" class="nav-fixed-top">
+    <div class="container">
+      <div class="row select-row">
+
+        <!-- end logo -->
+
+        <div class="col-md-9 col-sm-12 col-nav">
+          <!-- Navigation Area -->
+          <div class="content">
+            <div class="rex-navigation-area">
+              <ul id="rex-navigation" class="slimmenu cl-effect-5" data-0="margin-top:50px;" data-300="margin-top:35px;">
+                <li>
+                  <a href="home">Home</a>
+                </li>
+                <li>
+                  <a href="home#about">About</a>
+                </li>
+                <li class="drop-down">
+                    <a href="home#feature">Producten</a>
+                        <ul>
+                            <li>
+                               <a href="singlezone">Singlezone</a>
+                            <li>
+                              <a href="multizone">Multizone</a>
+                            </li>
+                            <li>
+                               <a href="loss-prevention">Loss-Prevention</a>
+                            </li>
+                            <li>
+                               <a href="hand-scanners">Hand-Scanners</a>
+                            </li>
+                            <li>
+                                <a href="x-ray">Verhuur X-Ray Units</a>
+                            </li>
+                            <li>
+                               <a href="verkoop">Verkoop</a>
+                            </li>
+                        </ul>
+                    </li>
+                </li>
+                <li>
+                  <a href="home#team">team</a>
+                </li>
+                <li>
+                  <a href="home#achievment">CASE RESULTS</a>
+                </li>
+                <li>
+                  <a href="home#testimonial">testimonial</a>
+                </li>
+                <li>
+                  <a href="home#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end Navigation Area -->
+          </div>
+        </div>
+        
+                <div class="col-md-3 col-sm-12">
+          <!-- brand logo -->
+            <div class="rex-logo">
+                {{
+                    widget('image', 'headerimage', {
+                        'src': asset('/assets/images/logo.png'),
+                        'alt': 'The alternate text',
+                        'fileName': 'Logo Image',
+                        'fileSize': 3,
+                        'imageSize': '150 x 40',
+                        'imageWidth': '140',
+                        'float': 'right',
+                    })|raw
+                }}
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- End header section -->

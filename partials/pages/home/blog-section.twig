@@ -1,0 +1,61 @@
+ <!--  Blog section -->
+<section id="rex-blog" data-scrolloffset="40" class="rex-blog container">
+<div class="rex-heading">
+    {{widget('content', 'blog-section-title', {
+      content: '<h3>Recent Articles</h3>'
+    })|raw}}
+    
+</div>
+{% if plugins.blog.posts|length %}
+<div class="row">
+    {% for post in plugins.blog.posts|slice(0, 3) %}
+    {% set postPermalink = "/" ~ plugins.blog.directory ~ "/" ~ post.slug|url_encode %}
+
+    <!-- blog list -->
+    <div class="col-md-4 col-sm-12">
+        <div class="rex-blog-content wow fadeInUp"  data-wow-duration="1.2s" data-wow-delay="0.5s">
+            <div class="thumbnail">
+            {% if post.featureImageAssetRef is not null %}
+                {% set assetRef = post.featureImageAssetRef %}
+                {% set featureImg = plugins.assets.images[assetRef] %}
+                <img src="{{ featureImg.url }}" alt="" />
+            {% endif %}
+                
+                <div class="caption">
+                    <div class="rex-sub-title">
+                        <h3><a href="{{ postPermalink }}">{{ post.title|raw }}</a></h3>
+                    </div>
+                    {% if post.summary|length > 0 %}
+                        {% if data.postDisplayType == 'summary' %}
+                            <p>{{ post.summary }}</p>
+                                <a class="btn btn-default" href="{{ postPermalink }}">
+                                    {{ widgets.blogpostlist.read_more|translate('Read more') }}
+                                </a>
+                        {% else %}
+                            <section class="blog-post-body">
+                                {{ post.content|raw }}
+                            </section>
+                        {% endif %}
+                    {% endif %}
+                    
+                    <!-- post-meta -->
+                    <p class="post-meta">
+                        <a class="btn btn-default" href="#"><i class="pe-7s-clock"></i> 19 aug</a>
+                        {% if post.tags %}
+                            <a class="btn btn-default" href="#">
+                                <i class="pe-7s-ticket"></i>
+                                {{ post.tags|join(', ') }}
+                            </a>
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor%}
+</div>
+{% else %}
+    <p>There are no posts to display.</p>
+{% endif %}
+</section>
+<!-- End Blog Section -->
