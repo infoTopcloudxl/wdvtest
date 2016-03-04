@@ -11,6 +11,12 @@
                 <div class="col-md-5 col-sm-5 col-xs-12">
                     <div class="rex-address">
                         <div class="rx-map">
+                            {{widget('content', 'contact-content', {
+                         content: '
+                         <br/><br/>
+                         '
+                         
+                        })|raw}}
                           {{widget('map', 'googlemaps', {
                           'height': '436',
                           'zoom': '15',
@@ -22,7 +28,22 @@
                 <div class="col-md-7 col-sm-7 col-xs-12">
                     <div class="form-section">
                         <!-- Form area -->
-
+                        {{widget('content', 'contact-content', {
+                         content: '
+                         <h3>NEEM CONTACT OP</h3>
+                         <hr></hr>
+                         <p>
+                         Heeft u interesse in het beveiligingsapparatuur
+                         van WDV? Of heeft u vragen over onze diensten?
+                         Wij helpen u graag verder. Via het formulier
+                         kunt u contact opnemen of een offerte op maat
+                         aanvragen. Wij nemen zo spoedig mogelijk
+                         contact met u op.
+                         </p>
+                         '
+                         
+                        })|raw}}
+                        <br/>
                         {{widget('contactform', 'contact', {
                           'text': 'Submit',
                           'formTitle': 'CONTACT OPNEMEN',
