@@ -1,73 +1,51 @@
-<!-- Service section -->
-            <section class="rex-service">
-            <div class="container-fluid">
+  <!-- Who We Are section -->
+            <section id="about" data-scrolloffset="50" class="rex-about">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6 select-col-img">
-                        <!-- service left content -->
-                        <div class="service-img">
-                            {{widget('image', 'service-image', {
-                                'src': asset("/assets/placeholders/medium.png")
+                    <div class="col-md-6 rex-about-img">
+                        <!-- left content -->
+                        <div class="img-responsive wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                            {{widget('image', 'about-image', {
+                                'src': asset("/assets/placeholders/large.png")
                             })|raw}}
                         </div>
-                    </div>
-                    <!-- end service left content -->
 
-                    <div class="col-md-12 col-lg-6 select-col">
-                        <!-- service right content -->
-                        <div class="rex-service-content">
+
+                    </div>
+                    <!-- end left content -->
+
+                    <div class="col-md-6 rex-about-text">
+                        <div class="wow fadeInUp " data-wow-duration="1.5s" data-wow-delay="0.9s">
+                            <!-- right content -->
                             <div class="rex-sub-title">
-                                {{widget('content', 'service-title', {
-                                  content: '<h3>Free Consultation</h3>'
+                                {{widget('content', 'about-title', {
+                                  content: '<h3>SERVICE</h3>'
                                 })|raw}}
-                            </div><!--/rex-heading-->
-
-                            {{widget('content', 'service-sub-title', {
-                                  content: '<h5>Free Consultations and No Upfront Fees</h5>'
-                            })|raw}}
-
-                           
-
-
-                            <!-- content list -->
-                            <article class="article wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.4s">
-                                {{widget('content', 'service-item-1', {
+                            </div>
+                            {{widget('content', 'about-content', {
                                   content: '
-                                    <i class="fa fa-pie-chart"></i>
-                                    <div class="article-content">
-                                    <h4>Request Quote</h4>
-                                    <p>This is Photoshops version  of Lorem Ipsum. Proin gravida nibh <br>
-                                    vel velit auctor aliquet. Ae sollicitudin, lorem quis bibendum auctor.</p>
-                                     </div>'
+                                    <p>
+                                        24 uur bereikbare servicedienst voor installatie, 
+                                        onderhoud en reparatie.
+                                    </p></br>
+                                  '
                                 })|raw}}
-                            </article>
 
-                            <article class="article wow fadeInUp" data-wow-duration="1.4s" data-wow-delay="0.6s">
-                                {{widget('content', 'service-item-2', {
+                            {{widget('content', 'about-content', {
                                   content: '
-                                    <i class="fa fa-rocket"></i>
-                                    <div class="article-content">
-                                    <h4>Request Quote</h4>
-                                    <p>This is Photoshops version  of Lorem Ipsum. Proin gravida nibh <br>
-                                    vel velit auctor aliquet. Ae sollicitudin, lorem quis bibendum auctor.</p>
-                                     </div>'
+                                        <h5>Beveiligingsmedewerkers</h5></br>
+                                    <p>
+                                        Eventueel kunnen wij beveiligingsmedewerkers voor 
+                                        u verzorgen die een aanvullende opleiding 
+                                        hebben gevolgd in visitatie, drugs en wapenherkenning. 
+                                    </p>
+                                  '
                                 })|raw}}
-                            </article>
-
-                            <article class="article wow fadeInUp" data-wow-duration="1.6s" data-wow-delay="0.9s">
-                                {{widget('content', 'service-item-3', {
-                                  content: '
-                                    <i class="fa fa-users"></i>
-                                    <div class="article-content">
-                                    <h4>Request Quote</h4>
-                                    <p>This is Photoshops version  of Lorem Ipsum. Proin gravida nibh <br>
-                                    vel velit auctor aliquet. Ae sollicitudin, lorem quis bibendum auctor.</p>
-                                    </div>'
-                                })|raw}}
-                            </article>
+                            
                         </div>
-                        <!-- end service right content -->
                     </div>
+                    <!-- End right content -->
                 </div>
             </div>
         </section>
-        <!-- End Service -->
+        <!-- End about section -->
