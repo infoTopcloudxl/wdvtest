@@ -11,6 +11,7 @@
         "pages/default",
         "pages/hand-scanners",
         "pages/multizone",
+        "pages/verkoop",
         "pages/loss-prevention",
         "pages/singlezone",
         "pages/x-ray",
