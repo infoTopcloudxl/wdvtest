@@ -1,6 +1,12 @@
 jQuery(document).ready(function($) {
 	'use strict';
-
+    
+    var ASSETS_PATH = $('#basekit-variables').attr('data-assets-path');
+    
+    function asset(assetPath) {
+        return ASSETS_PATH + assetPath;
+    }
+    
   // slider section
 	$('#rex-owl-example').owlCarousel({
 		singleItem : true,
@@ -82,9 +88,9 @@ jQuery(document).ready(function($) {
     }
   });
 
-
-	//paralax js
-	$('.rex-testimonial').parallax({imageSrc: 'http://placehold.it/2000x1330'});
+    $('.rex-testimonial').parallax({
+        imageSrc: asset('/assets/images/klantenervaring/klantenervaring.png'),
+    });
 
 	// Fire UP Search
   $('a[href="#search"]').on('click', function(event) {
