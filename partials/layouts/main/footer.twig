@@ -3,23 +3,6 @@
 <section class="footer-top">
     <div class="container">
         <div class="row">
-
-            <div class="footer-col col-xs-12 col-md-4 col-sm-12">
-                <div class="footer-logo-area wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.2s">
-                {{
-                    widget('image', 'headerimage', {
-                        'src': asset('/assets/images/logo.png'),
-                        'alt': 'The alternate text',
-                        'fileName': 'Logo Image',
-                        'fileSize': 3,
-                        'imageSize': '150 x 40',
-                        'imageWidth': '300',
-                        'float': 'right',
-                    })|raw
-                }}
-
-                </div>
-            </div>
             <div class="footer-col col-xs-12 col-md-4 col-sm-6">
                 <div class="content wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.4s">
                     <div class="title">
@@ -47,6 +30,22 @@
 
                         </article>
                     </div>
+                </div>
+            </div>
+            
+            <div class="footer-img">
+                <div class="footer-logo-area wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.2s">
+                {{
+                    widget('image', 'headerimage', {
+                        'src': asset('/assets/images/footer/footer.png'),
+                        'alt': 'The alternate text',
+                        'fileName': 'Logo Image',
+                        'fileSize': 3,
+                        'imageSize': '150 x 40',
+                        'imageWidth': '300',
+                        'float': 'right',
+                    })|raw
+                }}
                 </div>
             </div>
         </div>
