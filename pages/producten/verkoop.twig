@@ -1,0 +1,177 @@
+{% extends '/layouts/main.twig' %}
+{% block content %}
+    
+    <div class="custom-container producten">
+    
+        <div class="row">
+        
+            <div class="col-sm-12">
+            
+                {{
+                    widget('content', 'product-verkoop-titel', {
+                        content: '<h3>VERHUUR</h3>'
+                    })|raw
+                }}
+            
+            </div>
+        
+        </div>
+    
+        <div class="row">
+        
+            <div class="row col-sm-12">
+            
+                {{
+                    widget('content', 'product-verkoop-inleiding', {
+                        content: '<p></p>'
+                    })|raw
+                }}
+            
+            </div>
+        
+        </div>
+        
+        <div class="row product wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+        
+            <div class="col-sm-12 col-md-4 image">
+            
+                <img src="{{ asset('/assets/images/producten/verkoop/PMD2plusEllipticversion.jpg') }}"/>
+            
+            </div>
+        
+            <div class="col-sm-12 col-md-8 text">
+            
+                {{
+                    widget('content', 'product-verkoop-product1-text', {
+                        content: '
+                            <h4>CEIA PMD2 Elliptic</h4>      
+                            <p>                         
+                            Net als de HI-PE Multi Zone is de PMD2 Elliptic een beveiligingspoort die 
+                            aan de strengste internationale veiligheidsnormen voldoet.
+                            Het is een van de meest geavanceerde detectiepoorten van CEIA.
+                            De poort is eenvoudig in te stellen en makkelijk te monteren.
+                            De alarmdrempel is aan te passen per individuele zone waardoor zowel 
+                            grote wapens als kleine objecten worden gedetecteerd.                                      
+                            </p>
+                            <h5>Kenmerken CEIA PMD2 Elliptic</h5>
+                            <ul>
+                                <li>Uniform detectieveld</li>
+                                <li>Zeer hoog onderscheid</li>
+                                <li>Het display biedt enkele of meerdere locatie van wapens </li>
+                                <li>Snelle programmering door middel van een exclusieve chipkaartsysteem</li>
+                                <li>Hoge immuniteit voor externe storingen</li>
+                                <li>Lokaal of op afstand programmeren met netwerkmogelijkheden</li>
+                            </ul>
+                        '
+                    })|raw
+                }}
+            
+                <a href="{{ asset('/documents/producten/multizone/CEIA-PMD2-Plus-metal-detector.pdf') }}" class="button" role="button">Download brochure</a>
+            
+            </div>
+        
+        </div>
+        
+        <div class="row product wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+        
+            <div class="col-sm-12 col-md-4 image">
+            
+                <img src="{{ asset('/assets/images/producten/verkoop/pd140e.jpg') }}"/>
+            
+            </div>
+        
+            <div class="col-sm-12 col-md-8 text">
+            
+                {{
+                    widget('content', 'product-verkoop-product2-text', {
+                        content: '
+                            <h4>Hand scanner PD140E</h4>
+                            <p>
+                                De PD140E is een handheld detector met een zeer hoge betrouwbaarheid.
+                                De handscanner is uitgerust met geavanceerde technologie voor detectie van alle soorten metalen.
+                                Er is speciale aandacht besteed aan het ontwerp zodat de hand van de gebruiker niet stoort bij het detectiegebied.
+                                Bovendien is de afwerking afgestemd op gebruik.
+                                De detector heeft geen scherpe randen waardoor hij niet blijft hangen aan bijvoorbeeld knopen. 
+                            </p>
+                            <h5>Kenmerken Hand scanner PD140E</h5>
+                            <ul>
+                                <li>Conform aan de NI J- 0.602.02-norm</li>
+                                <li>Compact, elegant, robuust en ergonomisch</li>
+                                <li>Uniforme Detectie van magnetische en niet-magnetische voorwerpen</li>
+                                <li>Volledig digitaal: automatisch kalibreren </li>
+                                <li>Programmeerbare gevoeligheid</li>
+                                <li>Voor binnen- en buitengebruik </li>
+                            </ul>
+                        '
+                    })|raw
+                }}
+            
+                <a href="{{ asset('/documents/producten/hand-scanners/PD140E.pdf') }}" class="button" role="button">Download brochure</a>
+            
+            </div>
+        
+        </div>
+        
+        <div class="row product wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+        
+            <div class="col-sm-12 col-md-4 image">
+            
+                <img src="{{ asset('/assets/images/producten/verkoop/Gilardoni-FEP.png') }}"/>
+            
+            </div>
+        
+            <div class="col-sm-12 col-md-8 text">
+            
+                {{
+                    widget('content', 'product-verkoop-product2-text', {
+                        content: '
+                            <h4>Gilardoni FEP ME 536 X-Ray Unit</h4>
+                            <p>
+                                Deze röntgenscanner van Gilardoni is een inspectiesysteem voor post, pakketten 
+                                en kleine bagage. Het compacte formaat en de losstaande configuratie met 
+                                monitor en regeltafel zorgen voor een snelle installatie in een beperkte ruimte.
+                                FEP ME 536 is voorzien van ‘dual-energy detectie’ en geeft beelden van hoge 
+                                kwaliteit.
+                            </p>
+                        '
+                    })|raw
+                }}
+            
+                <!-- <a href="{{ asset('/documents/producten/hand-scanners/PD140E.pdf') }}" class="button" role="button">Download brochure</a> -->
+            
+            </div>
+        
+        </div>
+        
+        <div class="row product wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+        
+            <div class="col-sm-12 col-md-4 image">
+            
+                <img src="{{ asset('/assets/images/producten/verkoop/Gilardoni-FEP-ME-975-X-Ray-unit.png') }}"/>
+            
+            </div>
+        
+            <div class="col-sm-12 col-md-8 text">
+            
+                {{
+                    widget('content', 'product-verkoop-product2-text', {
+                        content: '
+                            <h4>Gilardoni FEP ME 975 X-Ray Unit</h4>
+                            <p>
+                                De röntgenscanner FEB ME 975 R-Ray Unit is een inspectiesysteem voor 
+                                ruimbagage en grote pakketten. Het bevat een vernieuwd softwareprogramma 
+                                en biedt hoge prestaties met een superieure beeldkwaliteit.
+                            </p>
+                        '
+                    })|raw
+                }}
+            
+                <!-- <a href="{{ asset('/documents/producten/hand-scanners/PD140E.pdf') }}" class="button" role="button">Download brochure</a> -->
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+{% endblock %}

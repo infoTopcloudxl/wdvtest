@@ -1,5 +1,5 @@
 {
-    "name": "LawRex",
+    "name": "WDV Thema",
     "thumbnail": "theme-preview.png",
     "widgetVersion":2,
     "images": [
@@ -7,19 +7,17 @@
         "images/logo.png"
     ],
      "pageTypes": [
-        "pages/home",
         "pages/default",
-        "pages/hand-scanners",
-        "pages/producten",
-        "pages/multizone",
-        "pages/verkoop",
-        "pages/loss-prevention",
-        "pages/singlezone",
-        "pages/x-ray",
+        "pages/home",
         "pages/over-ons",
-        "pages/home/about",
-        "pages/home/contact",
-        "pages/home/feature"
+        "pages/producten/home",
+        "pages/producten/singlezone",
+        "pages/producten/multizone",
+        "pages/producten/loss-prevention",
+        "pages/producten/hand-scanners",
+        "pages/producten/x-ray",
+        "pages/producten/verkoop",
+        "pages/contact"
     ],
     "colorSwatches":
     {

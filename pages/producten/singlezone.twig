@@ -1,0 +1,130 @@
+{% extends '/layouts/main.twig' %}
+{% block content %}
+    
+    <div class="custom-container producten">
+    
+        <div class="row">
+        
+            <div class="col-sm-12">
+            
+                {{
+                    widget('content', 'product-singlezone-titel', {
+                        content: '<h3>SINGLEZONE WTMD</h3>'
+                    })|raw
+                }}
+            
+            </div>
+        
+        </div>
+    
+        <div class="row">
+        
+            <div class="row col-sm-12">
+            
+                {{
+                    widget('content', 'product-singlezone-inleiding', {
+                        content: '
+                            <p>
+                                WTMD is de afkorting van Walk-Trough Metal Detector. 
+                                De Single Zone WTMD van CEIA is ontworpen en ontwikkeld om specifieke publieke beveiligingsbehoeften te voorzien. 
+                                De metaaldetector wordt veel ingezet bij scholen, hotels, pretparken en stadhuizen. 
+                                Hij is compact en licht van gewicht waardoor hij makkelijk te verplaatsen is.
+                                De Single Zone WTM vereist geen speciale training, wat hem zeer gebruiksvriendelijk maakt.
+                            </p>
+                        '
+                    })|raw
+                }}
+            
+            </div>
+        
+        </div>
+        
+        <div class="row product wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+        
+            <div class="col-sm-12 col-md-4 image">
+            
+                <img src="{{ asset('/assets/images/producten/singlezone/CEIA-Classic.jpg') }}"/>
+            
+            </div>
+        
+            <div class="col-sm-12 col-md-8 text">
+            
+                {{
+                    widget('content', 'product-singlezone-product1-text', {
+                        content: '
+                            <h4>CEIA Classic</h4>
+                            <p>
+                                Deze metaaldetector combineert de vereiste beveiliging met operationele 
+                                efficiëntie. De technologie beschikt over een hoge capaciteit, met zo 
+                                min mogelijk vals alarm bij persoonlijke bezittingen. Dat betekent 
+                                dat de poort geen alarm slaat bij personen die munten of sleutels 
+                                op zak hebben of gespen op hun kleding dragen.
+                            </p>
+                            <p>
+                            De metaaldetectoren van CEIA zijn geselecteerd door toonaangevende 
+                            veiligheidsdiensten over de hele wereld.
+                            Dit model voldoet aan alle internationale beveiligingsnormen </br> 
+                            voor het het opsporen van zowel magnetische en niet-magnetische wapens.
+                            </p>
+                            <h5>Kenmerken Single Zone WTMD:</h5>
+                            <ul>
+                                <li>Hoog niveau van detectie zonder vals alarm</li>
+                                <li>Leading Edge Technology</li>
+                                <li>Eenvoudig te installeren en te gebruiken</li>
+                                <li>Geschikt voor draagbare toepassingen</li>
+                                <li>Geen onderhoud nodig</li>
+                                <li>Betaalbaar</li>
+                            </ul>
+                        '
+                    })|raw
+                }}
+            
+                <a href="{{ asset('/documents/producten/singlezone/classic.pdf') }}" class="button" role="button">Download brochure</a>
+            
+            </div>
+        
+        </div>
+        
+        <div class="row product wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+        
+            <div class="col-sm-12 col-md-4 image">
+            
+                <img src="{{ asset('/assets/images/producten/singlezone/CEIAHIPECF.jpg') }}"/>
+            
+            </div>
+        
+            <div class="col-sm-12 col-md-8 text">
+            
+                {{
+                    widget('content', 'product-singlezone-product2-text', {
+                        content: '
+                            <h4>CEIA HI-PC/CF MOBILE</h4>
+                            <p>
+                                De CEIA HI-PC/CF Mobile is een draagbare metaaldetectiepoort.
+                                Er is geen gereedschap nodig om te monteren, wat hem ideaal maakt voor verhuur en mobiel gebruik.
+                                Dit model voldoet aan de huidige internationale veiligheidsnormen voor walk-through metaaldetectoren. 
+                            </p>
+                            <h5>Kenmerken CEIA HI-PC/CF Mobile</h5>
+                            <ul>
+                                <li>Eenvoudig te vervoeren en te installeren zonder gereedschap</li>
+                                <li>‘Cellular-Free’ technologie: minimum aan valse alarmen </li>
+                                <li>Neemt weinig ruimte in</li>
+                                <li>Makkelijk te selecteren beveiligingsniveau </li>
+                                <li>Akoestische en visuele signalen</li>
+                                <li>Waterbestendig waardoor geschikt voor binnen- en buitengebruik</li>
+                                <li>Geen onderhoud nodig</li>
+                                <li>Transport bag: tas beschermt de poort tijdens transport en opslag </li>
+                            </ul>
+                        '
+                    })|raw
+                }}
+            
+                <a href="{{ asset('/documents/producten/singlezone/mobile.pdf') }}" class="button" role="button">Download brochure</a>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+{% endblock %}
