@@ -1,16 +1,40 @@
-
 {% extends '/layouts/main.twig' %}
-
 {% block content %}
-{% include('/partials/pages/home/slider.twig') %} 
-{% include('/partials/pages/home/about.twig') %}
-{% include('/partials/pages/home/feature.twig') %}
-{% include('/partials/pages/home/service.twig') %}
-{% include('/partials/pages/home/call-to-action.twig') %}
-{% include('/partials/pages/home/david.twig') %}
-{% include('/partials/pages/home/cijfers.twig') %}
-{% include('/partials/pages/home/klantervaring.twig') %}
-{% include('/partials/pages/home/clients.twig') %}
-{% include('/partials/pages/home/contact.twig') %}
-{% include('/partials/pages/home/black-bar.twig') %}
+    
+    <div class="wdv">
+        <div class="home-page">  
+            <div class="row">
+
+                <h3>WDV</h3>
+                <br/><br/><br/>
+                <p>
+                WDV is gespecialiseerd in detectiesystemen voor overheid, horeca, evenementen, 
+                schoolfeesten en risicocongressen. Wij leveren kwalitatief
+                beveiligingsapparatuur dat zorg draagt voor een veilige omgeving. 
+                WDV is door de jaren heen uitgegroeid tot de grootste verhuurder van 
+                metaaldetectiepoortjes in Nederland. We zijn gevestigd in Rotterdam en 
+                bieden een 24 uursservice voor installatie, onderhoud en reparatie. <a href="over-ons"> Meer info </a>
+                </p>
+            </div>
+        </div>
+
+            <div class="home-page-1">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{asset('/assets/images/pd140n.jpg')}}"> <br/><br/>
+                        <a href="hand-scanners">Hand-Scanners</a>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="http://placehold.it/225x150"> <br/><br/>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="http://placehold.it/225x150"> <br/><br/>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+            </div>
+    </div>
 {% endblock %}
