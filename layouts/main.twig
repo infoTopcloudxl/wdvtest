@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ page.seoLang }}">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-    <!-- meta area-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="keywords" content="{{ page.keywords }}" />
-    <meta name="description" content="{{ page.description }}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    {% if site.favicon %}
+
+    <head>
+    
+        <meta charset="UTF-8">
+    
+        <title>{{ page.title }}</title>
+    
+        <!-- meta area-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="keywords" content="{{ page.keywords }}" />
+        <meta name="description" content="{{ page.description }}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+        {% if site.favicon %}
         <link rel="icon" href="{{ site.favicon['favicon'] }}" type="image/x-icon" />
         <link rel="SHORTCUT ICON" href="{{ site.favicon['thumbnail'] }}?v={{ "now"|date("U") }}" type="image/x-icon" />
-    {% endif %}
-    {% include basekit.headScript %}
-  </head>
- 
-  <body class="single">
-    <div id="basekit-variables"
-         data-assets-path="{{ asset() }}"
-    ></div>
+        {% endif %}
     
-  <!-- Loader to display before content Load-->
-  <div class="loading"><img src="{{asset('/assets/src/images/puff.svg')}}" alt=""></div>
+        {% include basekit.headScript %}
+    
+    </head>
+
+    <body class="single">
+    
+        <div id="basekit-variables" data-assets-path="{{ asset() }}"></div>
+
+        <!-- Loader to display before content Load-->
+        <div class="loading"><img src="{{asset('/assets/src/images/puff.svg')}}" alt=""></div>
+
+        <div id="left">
+
+            {% include('/partials/head-slider/head-slider.twig') %}
+
+            {% include('/partials/header/header.twig') %}
+
+            {% block content %}
+            {% endblock %}
+
+            {% include('/partials/footer/footer.twig') %}
+
+        </div>
+
+        <div id="right">
+        
+            <div></div><!-- Background Gradient -->
+            
+            <img src="{{asset('/assets/images/logo-david.png')}}" />
+        
+        </div>
 
 
-   {% include('/partials/layouts/main/head-slider.twig') %}
+        <!-- add js files -->
+        <script src="{{asset('/assets/js/vendor/jquery-1.11.3.min.js')}}"></script>
+        <script src="{{asset('/assets/js/vendor/wow.min.js')}}"></script>
+        <script src="{{asset('/assets/js/vendor/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('/assets/js/vendor/bootstrap.min.js')}}"></script>
+        <script src="{{asset('/assets/js/vendor/parallax.js')}}"></script>
+        <script src="{{asset('/assets/js/vendor/jquery.slimmenu.min.js')}}"></script>
+        <script src="{{asset('/assets/js/vendor/jquery.sticky.js')}}"></script>
+        <script src="{{asset('/assets/js/vendor/jquery.waypoints.min.js')}}"></script>
+        <script src="{{asset('/assets/js/vendor/jquery.vide.js')}}"></script>
+        <script src="{{asset('/assets/js/vendor/jquery.nicescroll.min.js')}}"></script>
+        <script src="{{asset('/assets/js/vendor/counter.js')}}"></script>
+        <script src="{{asset('/assets/js/main.js')}}"></script>
+        
+        {% include basekit.bodyScript %}
+    
+    </body>
 
-<div id="left">
-    {% include('/partials/layouts/main/header.twig') %}
-      
-    {% block content %}
-    {% endblock %}
-
-    {% include('/partials/layouts/main/footer.twig') %}
-</div>
-
-<div id="right">
-    <img class="bg" src="{{asset('/assets/images/slider/wdv.png')}}" />
-</div>
-<div id="right">
-    <img class= "bg-1" src="{{asset('/assets/images/logo-david.png')}}">
-</div>
-
-    <!-- add js files -->
-    <script src="{{asset('/assets/js/vendor/jquery-1.11.3.min.js')}}"></script>
-    <script src="{{asset('/assets/js/vendor/wow.min.js')}}"></script>
-    <script src="{{asset('/assets/js/vendor/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('/assets/js/vendor/bootstrap.min.js')}}"></script>
-    <script src="{{asset('/assets/js/vendor/parallax.js')}}"></script>
-    <script src="{{asset('/assets/js/vendor/jquery.slimmenu.min.js')}}"></script>
-    <script src="{{asset('/assets/js/vendor/jquery.sticky.js')}}"></script>
-    <script src="{{asset('/assets/js/vendor/jquery.waypoints.min.js')}}"></script>
-    <script src="{{asset('/assets/js/vendor/jquery.vide.js')}}"></script>
-    <script src="{{asset('/assets/js/vendor/jquery.nicescroll.min.js')}}"></script>
-    <script src="{{asset('/assets/js/vendor/counter.js')}}"></script>
-    <script src="{{asset('/assets/js/main.js')}}"></script>
-    {% include basekit.bodyScript %}
-  </body>
 </html>
 

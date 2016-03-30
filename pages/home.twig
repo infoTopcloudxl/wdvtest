@@ -1,40 +1,97 @@
 {% extends '/layouts/main.twig' %}
 {% block content %}
     
-    <div class="wdv">
-        <div class="home-page">  
-            <div class="row">
-
-                <h3>WDV</h3>
-                <br/><br/><br/>
-                <p>
-                WDV is gespecialiseerd in detectiesystemen voor overheid, horeca, evenementen, 
-                schoolfeesten en risicocongressen. Wij leveren kwalitatief
-                beveiligingsapparatuur dat zorg draagt voor een veilige omgeving. 
-                WDV is door de jaren heen uitgegroeid tot de grootste verhuurder van 
-                metaaldetectiepoortjes in Nederland. We zijn gevestigd in Rotterdam en 
-                bieden een 24 uursservice voor installatie, onderhoud en reparatie. <a href="over-ons"> Meer info </a>
-                </p>
+    <div class="custom-container homepage">
+    
+        <div class="row">
+            
+            <div class="col-sm-12">
+        
+                {{
+                    widget('content', 'homepage-titel', {
+                        content: '<h3>WDV</h3>'
+                    })|raw
+                }}
+            
             </div>
+        
         </div>
-
-            <div class="home-page-1">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="{{asset('/assets/images/pd140n.jpg')}}"> <br/><br/>
-                        <a href="hand-scanners">Hand-Scanners</a>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="http://placehold.it/225x150"> <br/><br/>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-                    <div class="col-md-4">
-                        <img src="http://placehold.it/225x150"> <br/><br/>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-                </div>
+    
+        <div class="row">
+            
+            <div class="col-sm-12">
+        
+                {{
+                    widget('content', 'homepage-introductie', {
+                        content: '
+                            <p>
+                                WDV is gespecialiseerd in detectiesystemen voor overheid, horeca, evenementen, 
+                                schoolfeesten en risicocongressen. Wij leveren kwalitatief
+                                beveiligingsapparatuur dat zorg draagt voor een veilige omgeving. 
+                                WDV is door de jaren heen uitgegroeid tot de grootste verhuurder van 
+                                metaaldetectiepoortjes in Nederland. We zijn gevestigd in Rotterdam en 
+                                bieden een 24 uursservice voor installatie, onderhoud en reparatie. <a href="over-ons"> Meer info </a>
+                            </p>
+                        '
+                    })|raw
+                }}
+            
             </div>
+        
+        </div>
+    
+        <div class="row">
+            
+            <div class="col-sm-12 col-md-4 text-center product">
+        
+                <div class="row col-sm-12">
+                
+                    <a href="#"><img src="{{asset('/assets/images/pd140n.jpg')}}"/></a>
+                
+                </div>
+        
+                <div class="row col-sm-12">
+                
+                    <a href="#">Hand-Scanners</a>
+                
+                </div>
+            
+            </div>
+            
+            <div class="col-sm-12 col-md-4 text-center product">
+        
+                <div class="row col-sm-12">
+                
+                    <a href="#"><img src="{{asset('/assets/images/pd140n.jpg')}}"/></a>
+                
+                </div>
+        
+                <div class="row col-sm-12">
+                
+                    <a href="#">Hand-Scanners</a>
+                
+                </div>
+            
+            </div>
+            
+            <div class="col-sm-12 col-md-4 text-center product">
+        
+                <div class="row col-sm-12">
+                
+                    <a href="#"><img src="{{asset('/assets/images/pd140n.jpg')}}"/></a>
+                
+                </div>
+        
+                <div class="row col-sm-12">
+                
+                    <a href="#">Hand-Scanners</a>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+    
     </div>
+
 {% endblock %}
